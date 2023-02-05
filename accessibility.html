@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="tabs.css">
+  <title>Accessibility</title>
+</head>
+<body>
+  <ol rol="tablist" aria-controls="panel1">
+    <li id="tab1" rol="tab" aria-controls="panel1" aria-selected="true">Tab 1</li>
+    <li id="tab2" rol="tab" aria-controls="panel1" aria-selected="false" >Tab 2</li>
+    <li id="tab3" rol="tab" aria-controls="panel1" aria-selected="false" >Tab 3</li>
+  </ol>
+  <div rol="tabpanel" id="tabpane1"  aria-labelledby="tab1">
+    <p>Panel 1</p>
+  </div>
+
+  <div class="hidden" id="tabpane2" rol="tabpanel"
+  aria-labelledby="tab2">
+    <p>Panel 2</p>
+  </div>
+
+  <div class="hidden" id="tabpane3" rol="tabpanel" aria-labelledby="tab3">
+    <p>Panel 3</p>
+  </div>
+</body>
+</html>
