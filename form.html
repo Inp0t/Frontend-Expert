@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+</head>
+<body>
+  <form action="/myapi" method="POST">
+    <label for="username" >Username</label>
+    <input id= "username"
+     type="text"
+      placeholder="username"
+      name="username" required/>
+
+    <label for="password">Password</label>
+    <input id ="password"
+    type="password"
+    name="password"
+    minilength="6"
+    required=""/>
+
+    <fieldset>
+      <legend>Chose your animal</legend>
+      <label for="Dog">Dog</label>
+      <input id="dog" type="radio" name="animal" valued="dog"/>
+
+      <label for="cat">Cat</label>
+      <input id="cat" type="radio" name="animal" valued="cat"/>
+
+      <label for="Dog">Horse</label>
+      <input id="horde" type="radio" name="animal" valued="dog"/>
+    </fieldset>
+
+    <input id="dog"type="date"/>
+  <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
